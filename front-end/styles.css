@@ -1,0 +1,446 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    animation: fadeIn 0.8s ease-in-out;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+.green-bar {
+    background-color: #32a852; 
+    height: 20px; 
+    width: 100%; 
+}
+
+.navbar-container {
+    width: 100%;
+}
+
+.nav-links a.active {
+    color: #32a852; 
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.about-section {
+    padding: 50px 20px;
+    text-align: center;
+    background-color: #ffffff;
+}
+
+.about-section .about-content {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: left;
+    font-size: 18px;
+    line-height: 1.8;
+    color: #000000;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.fade-link {
+    transition: opacity 0.5s ease-in-out;
+}
+
+.navbar {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white; 
+    padding: 15px 30px; 
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); 
+    height: 80px;
+}
+
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    height: 95px; 
+    margin-top: 10px;
+}
+
+.logo-text {
+    font-family: 'Pacifico', cursive; 
+    font-size: 32px; 
+    font-weight: bold; 
+    color: #32a852; 
+    position: relative;
+    animation: colorShift 4s infinite; 
+}
+
+
+@keyframes colorShift {
+    0% {
+        color: #32a852; 
+    }
+    50% {
+        color: #0f6f25; 
+    }
+    100% {
+        color: #32a852; 
+    }
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin: 0 50px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: black; 
+    font-size: 18px; 
+    font-weight: bold;
+    position: relative; 
+    transition: color 0.3s ease, transform 0.3s ease; 
+}
+
+
+.nav-links a:hover {
+    color: #32a852; 
+    transform: translateY(-5px) scale(1.1); 
+    text-shadow: 0px 4px 6px rgba(50, 168, 82, 0.5); 
+    font-weight: bold;
+}
+
+.search-bar {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.search-bar .search-icon {
+    position: absolute;
+    left: 10px; 
+    font-size: 16px; 
+    color: #ccc; 
+}
+
+.search-bar input {
+    padding: 7px 10px 7px 30px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 200px; 
+    transition: box-shadow 0.3s ease; 
+}
+
+.search-bar input:focus {
+    outline: none;
+    box-shadow: 0px 0px 10px rgba(50, 168, 82, 0.5); 
+}
+
+
+.navbar-image {
+    position: relative; 
+    width: 100%;
+    max-height: 400px; 
+    overflow: hidden; 
+    margin-bottom: -50px;
+}
+
+.navbar-image img {
+    width: 100%; 
+    height: auto;
+    display: block;
+}
+
+
+.overlay-text {
+    position: absolute;
+    top: 50%;
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    color: white; 
+    font-size: 35px; 
+    font-weight: bold; 
+    text-align: center; 
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    font-family: 'Arial', sans-serif; 
+}
+
+.hero {
+    background-image: url('hero.jpg');
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    color: white;
+    padding: 50px 20px;
+}
+
+.hero h1 {
+    font-size: 2rem;
+}
+
+.recipes {
+    bottom: 50px;
+    text-align: center;
+    padding-top: 0; 
+    margin-top: 0; 
+}
+
+.recipes h2 {
+    margin-bottom: 30px;
+    font-size: 24px; 
+    font-weight: bold;
+}
+
+.recipe-cards {
+    display: flex;
+    justify-content: center; 
+    gap: 50px; 
+    flex-wrap: wrap; 
+}
+
+
+.recipe-card {
+    background: #f9f9f9; 
+    border-radius: 10px; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+    width: 410px; 
+    height: 450px; 
+    display: flex;
+    align-items: flex-start; 
+    flex-direction: column;
+    align-items: center; 
+    overflow: hidden; 
+}
+
+
+.recipe-card img {
+    width: 100%; 
+    height: 50%; 
+    object-fit: cover;
+}
+
+
+.recipe-card h3 {
+    font-size: 24px;
+     margin: 10px 0;
+    text-align: left;
+    padding-top: 10px;
+    padding-left: 10px;
+    width: 100%; 
+}
+
+
+.recipe-card p {
+    font-size: 16px;
+    color: #555;
+    text-align: left; 
+    
+    padding-left: 10px;
+    width: 100%; 
+}
+
+
+.recipe-card button,
+.card-content button
+{
+    background: #32a852;
+    color: white;
+    border: none;
+    font-weight: bold;
+    padding: 10px 15px;
+    border-radius: 20px;
+    cursor: pointer;
+    align-self: flex-start; 
+    margin-top: 30px; 
+    margin-left: 10px;
+    transition: background-color 0.4s ease, transform 0.3s ease;
+}
+
+/* Buton hover efekti */
+.recipe-card button:hover, 
+.card-content button:hover
+{
+    background: #3dc55d;
+    transform: scale(1.05);
+}
+.recent-recipes {
+    padding: 40px 20px;
+    text-align: center;
+    background-color: #ffffff;
+}
+
+.recent-recipes h2 {
+    margin-bottom: 30px;
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+}
+
+.recent-recipe-cards {
+    display: flex;
+    flex-direction: column; 
+    gap: 30px; 
+    align-items: center; 
+}
+
+.recent-recipe-card {
+    display: flex;
+    flex-direction: row; 
+    background: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: 100%; 
+    max-width: 1000px; 
+    overflow: hidden;
+}
+
+.recent-recipe-card img {
+    width: 30%; 
+    height: 100%; 
+    object-fit: cover;
+}
+
+
+.card-content {
+    padding: 15px;
+    text-align: left; 
+    flex: 1; 
+}
+
+.card-content h3 {
+    font-size: 24px;
+    margin: 0 0 10px 0; 
+    margin-left: 10px;
+    color: #333;
+}
+
+.card-content p {
+    font-size: 16px;
+    margin: 0 0 20px 0; 
+    margin-left: 10px;
+    color: #555;
+}
+
+.footer {
+    background-color: #32a852; 
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap; 
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+.footer-about {
+    flex: 1;
+    min-width: 250px;
+}
+
+.footer-about h3 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    color: #fff;
+}
+
+.footer-about p {
+    font-size: 14px;
+    line-height: 1.6;
+    color: #f1f1f1;
+}
+
+/* Footer Linkler */
+.footer-links {
+    flex: 1;
+    min-width: 250px;
+}
+
+.footer-links h4 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links ul li {
+    margin-bottom: 10px;
+}
+
+.footer-links ul li a {
+    color: #f1f1f1;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.footer-links ul li a:hover {
+    color: #ddd;
+    text-decoration: underline;
+}
+
+
+.footer-social {
+    flex: 1;
+    min-width: 250px;
+}
+
+.footer-social h4 {
+    font-size: 18px;
+    margin-bottom: 15px;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.footer-social .social-icons {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+}
+
+.footer-social .social-icons a {
+    color: #f1f1f1;
+    font-size: 20px;
+    transition: color 0.3s ease;
+}
+
+.footer-social .social-icons a:hover {
+    color: #ddd;
+}
+
+
+.footer-bottom {
+    margin-top: 20px;
+    border-top: 1px solid #f1f1f1;
+    padding-top: 10px;
+    font-size: 14px;
+    color: #f1f1f1;
+}
