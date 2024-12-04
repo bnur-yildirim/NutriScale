@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NutriScale</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="scripts.js"></script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
 </head>
 
@@ -26,7 +27,8 @@
             </nav>
             <div class="search-bar">
                 <i class="fas fa-search search-icon"></i>
-                <input type="text" placeholder="Search">
+                <input type="text" id="search-input" placeholder="Search">
+                <div id="search-dropdown" class="search-dropdown"></div>
             </div>
         </div>
         <div class="navbar-image">
@@ -44,7 +46,7 @@
         <section class="recipes">
             <h2 style="font-size: 32px">Most Searched Recipes</h2>
             <div class="recipe-cards">
-                <div class="recipe-card">
+                <div class="recipe-card" data-recipe-id="1">
                     <img src="Featured image.png" alt="Waffles">
                     <h3>Waffles</h3>
                     <p>Indulge in the crispy delight of freshly made waffles, perfect for a cozy breakfast or a sweet
@@ -52,14 +54,14 @@
                     <button onclick="window.location.href='waffles.html'">View Recipe</button>
 
                 </div>
-                <div class="recipe-card">
+                <div class="recipe-card" data-recipe-id="2">
                     <img src="Featured image (1).png" alt="Pancakes">
                     <h3>Pancakes</h3>
                     <p>Fluffy and golden pancakes, the perfect start to your day or a delightful snack for any time !
                     </p>
                     <button onclick="window.location.href='pancakes.html'">View Recipe</button>
                 </div>
-                <div class="recipe-card">
+                <div class="recipe-card" data-recipe-id="3">
                     <img src="Featured image (2).png" alt="Hot Chocolate">
                     <h3>Hot Chocolate</h3>
                     <p>Warm up with the rich, velvety goodness of hot chocolate, your ultimate comfort in a cup !</p>
@@ -71,7 +73,7 @@
             <h2 style="font-size: 32px">Recent Recipes</h2>
             <div class="recent-recipe-cards">
 
-                <div class="recent-recipe-card">
+                <div class="recent-recipe-card" data-recipe-id="4">
                     <img src="donuts.png" alt="Donut">
                     <div class="card-content">
                         <h3>Donut</h3>
@@ -80,7 +82,7 @@
                     </div>
                 </div>
 
-                <div class="recent-recipe-card">
+                <div class="recent-recipe-card" data-recipe-id="5">
                     <img src="cereal.png" alt="Cereal">
                     <div class="card-content">
                         <h3>Cereal</h3>
@@ -90,7 +92,7 @@
                     </div>
                 </div>
 
-                <div class="recent-recipe-card">
+                <div class="recent-recipe-card" data-recipe-id="6">
                     <img src="cookies.png" alt="Cookies">
                     <div class="card-content">
                         <h3>Cookies</h3>
