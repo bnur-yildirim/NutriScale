@@ -1,0 +1,119 @@
+{
+    "recipes": [
+        {
+            "id": 1,
+            "name": "Waffles",
+            "ingredients": [
+                "240g all-purpose flour",
+                "25g sugar",
+                "12g baking powder",
+                "2g salt",
+                "2 eggs",
+                "360g milk",
+                "115g melted butter",
+                "5g vanilla extract"
+            ],
+            "steps": [
+                "In a bowl, whisk together dry ingredients.",
+                "Add eggs, milk, melted butter, and vanilla. Mix until smooth.",
+                "Preheat the waffle iron and grease it.",
+                "Pour batter onto the waffle iron and cook until golden brown.",
+                "Serve with syrup and toppings."
+            ]
+        },
+        {
+            "id": 2,
+            "name": "Hot Chocolate",
+            "ingredients": [
+                "480g milk",
+                "10g cocoa powder",
+                "25g sugar",
+                "1g vanilla extract",
+                "Whipped cream (optional)"
+            ],
+            "steps": [
+                "In a small pot, heat milk over medium heat.",
+                "Whisk in cocoa powder and sugar until dissolved.",
+                "Bring to a simmer and remove from heat.",
+                "Stir in vanilla extract.",
+                "Top with whipped cream and serve."
+            ]
+        },
+        {
+            "id": 3,
+            "name": "Pancakes",
+            "ingredients": [
+                "180g all-purpose flour",
+                "25g sugar",
+                "8g baking powder",
+                "2g salt",
+                "1 egg",
+                "300g milk",
+                "45g melted butter",
+                "5g vanilla extract"
+            ],
+            "steps": [
+                "Mix dry ingredients in one bowl.",
+                "In another bowl, whisk together wet ingredients.",
+                "Combine wet and dry ingredients, stirring until smooth.",
+                "Heat a non-stick skillet and grease lightly.",
+                "Pour batter into the pan and cook until bubbles form.",
+                "Flip and cook until golden brown."
+            ]
+        },
+        {
+            "id": 4,
+            "name": "Donuts",
+            "ingredients": [
+                "240g all-purpose flour",
+                "200g sugar",
+                "8g baking powder",
+                "1g salt",
+                "2 eggs",
+                "120g milk",
+                "30g melted butter",
+                "5g vanilla extract"
+            ],
+            "steps": [
+                "Preheat oil for frying.",
+                "Mix dry ingredients in one bowl.",
+                "Whisk eggs, milk, melted butter, and vanilla in another.",
+                "Combine wet and dry ingredients until smooth.",
+                "Shape dough and fry in batches.",
+                "Cool and coat with sugar or glaze."
+            ]
+        },
+        {
+            "id": 5,
+            "name": "Cereal",
+            "ingredients": [
+                "30g cereal",
+                "240g milk"
+            ],
+            "steps": [
+                "Pour cereal into a bowl.",
+                "Add milk and serve."
+            ]
+        },
+        {
+            "id": 6,
+            "name": "Cookies",
+            "ingredients": [
+                "225g butter",
+                "200g sugar",
+                "240g flour",
+                "1 egg",
+                "5g vanilla extract",
+                "3g baking soda"
+            ],
+            "steps": [
+                "Preheat the oven to 175°C.",
+                "Cream butter and sugar together.",
+                "Add egg and vanilla, mix well.",
+                "Stir in flour and baking soda.",
+                "Shape dough into balls and place on a baking sheet.",
+                "Bake for 10-12 minutes until golden."
+            ]
+        }
+    ]
+}
