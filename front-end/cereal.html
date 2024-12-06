@@ -4,25 +4,95 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cereal Recipe</title>
+    <title>Cereal Recipe - NutriScale</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <script src="cereal.js"></script> <!-- Link to your JavaScript file -->
 </head>
 
 <body>
-    <h1 id="recipe-name">Cereal Recipe</h1>
+    <!-- Header Section -->
+    <header class="navbar-container">
+        <div class="green-bar"></div>
+        <div class="navbar">
+            <div class="logo">
+                <img src="logo.png" alt="NutriScale Logo">
+                <span class="logo-text">NutriScale</span>
+            </div>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html" id="home-link">Home</a></li>
+                    <li><a href="#">Recipes</a></li>
+                    <li><a href="About_us.html" class="fade-link">About Us</a></li>
+                </ul>
+            </nav>
+            <div class="search-bar">
+                <i class="fas fa-search search-icon"></i>
+                <input type="text" id="search-input" placeholder="Search">
+                <div id="search-dropdown" class="search-dropdown"></div>
+            </div>
+        </div>
+        <div class="navbar-image">
+            <img src="cerealrecipe.jpg" alt="Navbar Background">
+            <div class="overlay-text">
+            </div>
+        </div>
+    </header>
 
-    <h2>Ingredients</h2>
-    <ul id="ingredients-list">
-        <!-- Ingredients will be dynamically inserted here -->
-    </ul>
+    <!-- Main Content Section -->
+    <main>
+        <section class="recipe-page">
+            <div class="recipe-content">
+                <h1 id="recipe-name">Cereal Recipe</h1>
 
-    <h2>Steps</h2>
-    <ol id="steps-list">
-        <!-- Steps will be dynamically inserted here -->
-    </ol>
+                <!-- Ingredients Section -->
+                <h2>Ingredients</h2>
+                <ul id="ingredients-list">
+                  
+                </ul>
 
-    <button id="connectButton">Connect Scale</button>
-    <p id="status"></p>
+                <!-- Steps Section -->
+                <h2>Steps</h2>
+                <ol id="steps-list">
+                    
+                </ol>
+
+                <!-- Connect Scale Button -->
+                <button id="connectButton">Connect Scale</button>
+                <p id="status"></p>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-about">
+                <h3>NutriScale</h3>
+                <p>
+                    NutriScale is your smart kitchen assistant, offering personalized recipes, smart device integration,
+                    and a seamless cooking experience.
+                </p>
+            </div>
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="About_us.html">About Us</a></li>
+                    <li><a href="#">Recipes</a></li>
+                </ul>
+            </div>
+            <div class="footer-social">
+                <h4>Follow Us</h4>
+                <div class="social-icons">
+                    <a href="#"><i class="fas fa-envelope"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 NutriScale. All rights reserved.</p>
+        </div>
+    </footer>
 </body>
 
 </html>
