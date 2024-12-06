@@ -444,3 +444,141 @@ body {
     font-size: 14px;
     color: #f1f1f1;
 }
+
+/* Tarif Sayfası Genel Stili */
+.recipe-page {
+    padding: 20px;
+    max-width: 900px;
+    margin: 80px auto;
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    font-family: Arial, sans-serif;
+}
+
+/* Başlık Stili */
+.recipe-page h1 {
+    font-size: 32px;
+    font-weight: bold;
+    color: #32a852;
+    text-align: center;
+    margin-bottom: 20px;
+    text-transform: capitalize;
+}
+
+/* İçerik Başlıkları */
+.recipe-page h2 {
+    font-size: 24px;
+    color: #333;
+    margin-top: 30px;
+    font-weight: bold;
+}
+
+/* İçerik Container */
+.content-container {
+    width: 80%;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Malzemeler ve Adımlar Listesi */
+.recipe-page ul,
+.recipe-page ol {
+    margin: 20px 0;
+    padding-left: 30px;
+    font-size: 16px;
+    line-height: 1.8;
+    color: #555;
+    width: 100%;
+}
+
+.recipe-page ul li,
+.recipe-page ol li {
+    margin-bottom: 10px;
+}
+
+/* Dinamik Buton */
+#connectButton {
+    display: block;
+    margin: 30px auto;
+    padding: 12px 25px;
+    background-color: #32a852;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    text-align: center;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    width: 220px;
+}
+
+#connectButton:hover {
+    background-color: #3dc55d;
+    transform: scale(1.05);
+}
+
+/* Durum Mesajı */
+#status {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 14px;
+    color: #777;
+}
+
+/* Sayfa İçeriği Gölgelendirme */
+.recipe-page .recipe-content {
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Tarif Sayfasındaki Görsellerin Stili */
+.recipe-page img {
+    width: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+    margin-top: 20px;
+}
+
+/* Tarif Adımlarını Düğme ile Vurgulama */
+.recipe-page ol li button {
+    background: #32a852;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    margin-top: 10px;
+}
+
+.recipe-page ol li button:hover {
+    background-color: #3dc55d;
+    transform: scale(1.05);
+}
+
+#search-dropdown {
+    display: none; /* Başlangıçta gizli */
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: white;
+    border: 1px solid #ccc;
+    width: 100%;
+    max-height: 200px;
+    overflow-y: auto;
+    z-index: 1000;
+}
+
+#search-dropdown div {
+    padding: 8px;
+    cursor: pointer;
+}
+
+#search-dropdown div:hover {
+    background-color: #f0f0f0;
+}
