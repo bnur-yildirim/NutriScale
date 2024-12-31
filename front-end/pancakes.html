@@ -4,10 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hot Chocolate Recipe - NutriScale</title>
+    <title>Pancakes Recipe - NutriScale</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <script src="hot-chocolate.js"></script> <!-- Link to your JavaScript file -->
+    <script src="pancakes.js"></script> <!-- Link to your JavaScript file -->
 </head>
 
 <body>
@@ -33,7 +33,7 @@
             </div>
         </div>
         <div class="navbar-image">
-            <img src="hotchocolaterecipe.jpg" alt="Navbar Background">
+            <img src="pancakerecipe.jpg" alt="Navbar Background">
             <div class="overlay-text">
             </div>
         </div>
@@ -43,19 +43,23 @@
     <main>
         <section class="recipe-page">
             <div class="recipe-content">
-                <h1 id="recipe-name">Hot Chocolate Recipe</h1>
+                <h1 id="recipe-name">Pancakes Recipe</h1>
+                <label for="ingredient-select">Select an ingredient to weigh:</label>
+                <select id="ingredient-select">
+                    <option value="flour">Flour</option>
+                    <option value="milk">Milk</option>
+                    <option value="eggs">Eggs</option>
+                    <option value="sugar">Sugar</option>
+                    <option value="butter">Butter</option>
+                </select>
 
                 <!-- Ingredients Section -->
                 <h2>Ingredients</h2>
-                <ul id="ingredients-list">
-                  
-                </ul>
+                <ul id="ingredients-list"></ul>
 
                 <!-- Steps Section -->
                 <h2>Steps</h2>
-                <ol id="steps-list">
-                    
-                </ol>
+                <ol id="steps-list"></ol>
 
                 <!-- Connect Scale Button -->
                 <button id="connectButton">Connect Scale</button>
